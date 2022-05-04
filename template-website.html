@@ -99,7 +99,7 @@
                         <p>Your product description here.</p>
                         <p>
                         <p>
-                            <a class="btn btn-lg btn-primary" href="#" role="button">
+                            <a class="btn btn-lg btn-primary" href="#first-service" role="button">
                                 Learn more
                             </a>
                         </p>
@@ -118,7 +118,7 @@
                         <h2>Product 2</h2>
                         <p>Your product description here</p>
                         <p>
-                            <a class="btn btn-lg btn-primary" href="#" role="button">
+                            <a class="btn btn-lg btn-primary" href="#second-service" role="button">
                                 Learn more
                             </a>
                         </p>
@@ -135,7 +135,7 @@
                         <h2>Product 3</h2>
                         <p>Your product description here</p>
                         <p>
-                            <a class="btn btn-lg btn-primary" href="#" role="button">
+                            <a class="btn btn-lg btn-primary" href="#third-service" role="button">
                                 Learn more
                             </a>
                         </p>
@@ -169,7 +169,7 @@
 
     <div id="services">
 
-        <div class="row featurette py-5 block block-1 full-page">
+        <div class="row featurette py-5 block block-1 full-page text-center" id="first-service">
 
             <div class="col-md-5 py-5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" fill="currentColor"
@@ -191,17 +191,9 @@
         </div>
         <!--featurette-->
 
-        <div class="row featurette py-5 block block-2 full-page">
+        <div class="row featurette py-5 block block-2 full-page text-center" id="second-service">
 
-            <div class="col-md-7">
-                <h2 class="featurette-heading py-5">Service title.
-                    <span class="fst-italic">Subtitle here.</span>
-                </h2>
-                <p class="lead">
-                    Your service description here.</p>
-            </div>
-
-            <div class="col-md-5 py-5">
+            <div class="col-md-5 py-5 second-order-responsive">
                 <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" fill="currentColor" class="bi bi-eye"
                     viewBox="0 0 16 16">
                     <path
@@ -210,10 +202,18 @@
                 </svg>
             </div>
 
+            <div class="col-md-7 first-order-responsive">
+                <h2 class="featurette-heading py-5">Service title.
+                    <span class="fst-italic">Subtitle here.</span>
+                </h2>
+                <p class="lead">
+                    Your service description here.</p>
+            </div>
+
         </div>
         <!--featurette-->
 
-        <div class="row featurette py-5 block block-3 full-page">
+        <div class="row featurette py-5 block block-3 full-page text-center" id="third-service">
 
             <div class="col-md-5 py-5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" fill="currentColor"
@@ -239,7 +239,100 @@
     </div>
     <!--all products-->
 
-    <section id="contact" class="contact">
+    <section id="contact" class="contact mb-4 p-5 m-5">
+
+        <h2 class="h2-responsive fw-bold text-center my-4">
+            Contact us
+        </h2>
+
+        <p class="text-center w-responsive mx-auto mb-5">
+            Do you have any questions? Contacts us and our team will be happy to help within 2 business days.
+        </p>
+
+        <div class="row">
+
+            <div class="col-md-9 mb-md-0 mb-5">
+
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+
+                                <input type="text" id="name" name="username" class="form-control">
+                                <label for="username">
+                                    Name
+                                </label>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email">
+                                    Email
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--first row-->
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject">
+                                    Subject
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--second row-->
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2"
+                                    class="form-control md-textarea">
+                                    </textarea>
+
+                                <label for="message">
+                                    Message
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--third row-->
+                </form>
+
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary text-white" onclick="document.getElementByID('contact-form').submit();">
+                        Send
+                    </a>
+                </div>
+                <div class="status"></div>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>hello@youremail.com</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
 
     </section>
 
